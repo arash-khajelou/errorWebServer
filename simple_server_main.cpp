@@ -6,10 +6,11 @@ int main ()
 {
   std::cout << "Error Web Server ... !\n";
   int i = 0 ;
+  std::string Data = "" ;
   try
     {
       // Create the socket
-      ServerSocket server ( 8081 );
+      ServerSocket server ( 3000 );
 
       while ( true )
 	{
@@ -21,11 +22,13 @@ int main ()
 	    {
 	      if ( servTest )
 		{
-		  std::string data;
-		  data = "<a href = \"http://www.google.com\" > salam </a> ";
-		  new_sock << data ;
+		  Data = "<a href = \"http://www.google.com\" > salam </a> ";
+		  new_sock << Data ;
 		  new_sock << "\n<a href = \"http://www.google.com\"><h1>salam</h1></a>";
-		  i++ ;
+		}
+	      if ( new_sock.iRecv(Data) )
+		{
+		  new_sock << Data ;
 		}
 	    }
 	  catch ( SocketException& ) {}

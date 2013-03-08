@@ -1,4 +1,4 @@
-# Makefile for the socket programming example
+# Makefile for Error Web Server
 #
 
 simple_server_objects = ServerSocket.o Socket.o simple_server_main.o

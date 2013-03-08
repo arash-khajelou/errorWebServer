@@ -1,6 +1,3 @@
-// SocketException class
-
-
 #ifndef SocketException_class
 #define SocketException_class
 

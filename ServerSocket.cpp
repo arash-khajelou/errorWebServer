@@ -1,5 +1,3 @@
-// Implementation of the ServerSocket class
-
 #include "ServerSocket.h"
 #include "SocketException.h"
 
@@ -20,7 +18,6 @@ ServerSocket::ServerSocket ( int port )
     {
       throw SocketException ( "Could not listen to socket." );
     }
-
 }
 
 ServerSocket::~ServerSocket()
@@ -42,7 +39,8 @@ const ServerSocket& ServerSocket::operator << ( const std::string& s ) const
 
 const ServerSocket& ServerSocket::operator >> ( std::string& s ) const
 {
-  if ( ! Socket::recv ( s ) )
+  bool recvTest = Socket::recv (s) ;
+  if ( ! recvTest )
     {
       throw SocketException ( "Could not read from socket." );
     }
@@ -50,9 +48,13 @@ const ServerSocket& ServerSocket::operator >> ( std::string& s ) const
   return *this;
 }
 
+bool ServerSocket::iRecv (std::string & s ) {
+  return Socket::recv (s) ;
+}
+
 bool ServerSocket::accept ( ServerSocket& sock )
 {
-	bool sockTest = Socket::accept (sock) ;
+  bool sockTest = Socket::accept (sock) ;
   if ( ! sockTest )
     {
       throw SocketException ( "Could not accept socket." );
