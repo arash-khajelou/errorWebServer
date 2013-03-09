@@ -18,12 +18,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 MA 02110-1301, USA.
 
 <h2>Error-SWG group members :</h2>
-	<p>Hadi azad del</p>
-	<p>Shahin rahbari</p>
-	<p>Arash Khajelou</p>
+	Hadi azad del
+	Shahin rahbari
+	Arash Khajelou
 
 <h2>git address :</h2>
-	<p>http -> http://www.github.com/a-khajelou/errorWebServer</p2>
-	<p>ssh  -> git@github.com:a-khajelou/errorWebServer.git</p>
+	http -> http://www.github.com/a-khajelou/errorWebServer
+	ssh  -> git@github.com:a-khajelou/errorWebServer.git
 
-
+<h2>ErrorWebServer's class diagram</h2>
+	...
