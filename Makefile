@@ -1,13 +1,13 @@
 # Makefile for Error Web Server
 #
 
-simple_server_objects = ServerSocket.o Socket.o simple_server_main.o
+error_web_server_objects = ServerSocket.o Socket.o simple_server_main.o
 
 
-all : simple_server
+all : error_web_server
 
-simple_server: $(simple_server_objects)
-	g++ -o simple_server $(simple_server_objects)
+error_web_server: $(error_web_server_objects)
+	g++ -o errorWebServer $(error_web_server_objects)
 
 
 Socket: Socket.cpp
@@ -16,4 +16,4 @@ simple_server_main: simple_server_main.cpp
 
 
 clean:
-	rm -f *.o simple_server
+	rm -f *.o errorWebServer
