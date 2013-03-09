@@ -1,5 +1,5 @@
 <center><h1>Error Web Server</h1></center>
-<center><h2>=====================</h2></center>
+<center><h3>=====================</h3></center>
 
 Copyright 2013 all rights reserved to Error-SWG 
 This program is free software; you can redistribute it and/or modify
