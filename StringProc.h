@@ -9,13 +9,13 @@ class StringProc {
 	std::string protocol;
 	std::string request;
 public :
-	StringProc 					(std::string      );
-	StringProc 					(									);
-	void process 				(									);
-	std::string getDir	(									);
-	std::string getProto(									);
-	std::string getReq	(									);
-	void setStringProc 	(std::string 			);
+	StringProc (std::string);
+	StringProc ();
+	void process ();
+	std::string getDir ();
+	std::string getProto ();
+	std::string getReq ();
+	void setStringProc (std::string );
 };
 
 #endif

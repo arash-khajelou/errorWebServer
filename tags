@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAXCONNECTIONS	Socket.h	/^const int MAXCONNECTIONS = 100;$/;"	v
+MAXHOSTNAME	Socket.h	/^const int MAXHOSTNAME = 200;$/;"	v
+MAXRECV	Socket.h	/^const int MAXRECV = 500;$/;"	v
+STRINGPROC_H	StringProc.h	2;"	d
+ServerSocket	ServerSocket.cpp	/^ServerSocket::ServerSocket ( int port )$/;"	f	class:ServerSocket
+ServerSocket	ServerSocket.h	/^  ServerSocket (){};$/;"	f	class:ServerSocket
+ServerSocket	ServerSocket.h	/^class ServerSocket : private Socket$/;"	c
+ServerSocket_class	ServerSocket.h	2;"	d
+Socket	Socket.cpp	/^Socket::Socket() :$/;"	f	class:Socket
+Socket	Socket.h	/^class Socket$/;"	c
+SocketException	SocketException.h	/^  SocketException ( std::string s ) : m_s ( s ) {};$/;"	f	class:SocketException
+SocketException	SocketException.h	/^class SocketException$/;"	c
+SocketException_class	SocketException.h	2;"	d
+Socket_class	Socket.h	2;"	d
+StringProc	StringProc.cpp	/^StringProc::StringProc(){$/;"	f	class:StringProc
+StringProc	StringProc.cpp	/^StringProc::StringProc(std::string s){$/;"	f	class:StringProc
+StringProc	StringProc.h	/^class StringProc {$/;"	c
+accept	ServerSocket.cpp	/^bool ServerSocket::accept ( ServerSocket& sock )$/;"	f	class:ServerSocket
+accept	Socket.cpp	/^bool Socket::accept ( Socket& new_socket ) const$/;"	f	class:Socket
+bind	Socket.cpp	/^bool Socket::bind ( const int port )$/;"	f	class:Socket
+connect	Socket.cpp	/^bool Socket::connect ( const std::string host, const int port )$/;"	f	class:Socket
+create	Socket.cpp	/^bool Socket::create()$/;"	f	class:Socket
+description	SocketException.h	/^  std::string description() { return m_s; }$/;"	f	class:SocketException
+directory	StringProc.h	/^	std::string directory;$/;"	m	class:StringProc
+error_web_server_objects	Makefile	/^error_web_server_objects = ServerSocket.o Socket.o StringProc.o error_web_server_main.o$/;"	m
+getDir	StringProc.cpp	/^std::string StringProc::getDir(){$/;"	f	class:StringProc
+getProto	StringProc.cpp	/^std::string StringProc::getProto(){$/;"	f	class:StringProc
+getReq	StringProc.cpp	/^std::string StringProc::getReq(){$/;"	f	class:StringProc
+iRecv	ServerSocket.cpp	/^bool ServerSocket::iRecv (std::string & s ) {$/;"	f	class:ServerSocket
+is_valid	Socket.h	/^  bool is_valid() const { return m_sock != -1; }$/;"	f	class:Socket
+listen	Socket.cpp	/^bool Socket::listen() const$/;"	f	class:Socket
+m_addr	Socket.h	/^  sockaddr_in m_addr;$/;"	m	class:Socket
+m_s	SocketException.h	/^  std::string m_s;$/;"	m	class:SocketException
+m_sock	Socket.h	/^  int m_sock;$/;"	m	class:Socket
+main	error_web_server_main.cpp	/^int main ()$/;"	f
+operator <<	ServerSocket.cpp	/^const ServerSocket& ServerSocket::operator << ( const std::string& s ) const$/;"	f	class:ServerSocket
+operator >>	ServerSocket.cpp	/^const ServerSocket& ServerSocket::operator >> ( std::string& s ) const$/;"	f	class:ServerSocket
+pString	StringProc.h	/^	std::string pString ;$/;"	m	class:StringProc
+process	StringProc.cpp	/^void StringProc::process() {$/;"	f	class:StringProc
+protocol	StringProc.h	/^	std::string protocol;$/;"	m	class:StringProc
+recv	Socket.cpp	/^int Socket::recv ( std::string& s ) const$/;"	f	class:Socket
+request	StringProc.h	/^	std::string request;$/;"	m	class:StringProc
+send	Socket.cpp	/^bool Socket::send ( const std::string s ) const$/;"	f	class:Socket
+setStringProc	StringProc.cpp	/^void StringProc::setStringProc (std::string s){$/;"	f	class:StringProc
+set_non_blocking	Socket.cpp	/^void Socket::set_non_blocking ( const bool b )$/;"	f	class:Socket
+~ServerSocket	ServerSocket.cpp	/^ServerSocket::~ServerSocket()$/;"	f	class:ServerSocket
+~Socket	Socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket
+~SocketException	SocketException.h	/^  ~SocketException (){};$/;"	f	class:SocketException

@@ -9,7 +9,6 @@ int main () {
  	try { // starting the body of expection error
 
     	ServerSocket server ( 2013 ); // creating socket in port 3000
-
       	while ( true ) { // main loop
 
 	  		ServerSocket connected_sock; // accepted socket created to client
@@ -21,10 +20,11 @@ int main () {
 	      			if ( connected_sock.iRecv(recvString) ) {
 		  				pStr.setStringProc (recvString);
 		  				pStr.process();
-					}
-		  			//recvString = "<a href = \"http://www.google.com\" > google WebSie </a> ";
-		  			connected_sock << recvString ;
-		  			std::cout<< "\n" << pStr.getDir() << "\n" << pStr.getProto();
+		  			}
+		  			//connected_sock << recvString ;
+		  			//connected_sock << " \n" << pStr.getDir() << "\n" << pStr.getProto();
+		  			//connected_sock << pStr.getDir() ;
+		  			connected_sock << "salam " ;
 				}
 	    	}
 			catch ( SocketException& ) {}
