@@ -1,0 +1,75 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <stdlib.h>
+#include <conio.h>
+using namespace std;
+//----------------------
+/*This class : separates file type such as php , html ,..
+
+               open(line,&is_open): return the given line number
+                                    work with a refrence(is_open) to notice end of file.     
+                                                       
+*/class file{
+  private:
+		void get_extention()//separate file type
+			{
+				file_ext=file_addr;
+				file_ext.substr(file_ext.find_last_of(".")+1);
+			}	
+		
+
+	public:
+		string file_ext;
+		string file_addr;
+
+		file(string fileaddress)
+			{
+			
+
+			if (fileaddress.length()==0)
+				cout << "ERROR: There is a problem in file opening."<<endl;
+			else
+				file_addr=fileaddress;
+			}
+		char* open(int line,bool &is_open)
+			{
+			///// convert string to char !!! 
+			int temp=file_addr.length();
+			char *file_addr_char=new char[temp];
+			for (int a=0;a<=temp;a++)
+            			file_addr_char[a]=file_addr[a];
+			/////
+			
+			string buffer;	
+			ifstream file_index(file_addr_char);			
+			if(! file_index.is_open())
+				{
+				cout << "ERROR: There is a problem in opening file."<<endl;
+				}
+			else{
+				 for(int i=0;i<=line && ! file_index.eof();i++){ // count to the given line number and return that
+                         
+				         char str1[256];
+                         file_index.getline(str1,100);
+				         if(i==line){
+                                    is_open=! file_index.eof();
+                                    return str1;
+                                    }
+                }
+                }
+			}
+	};
+//----------------------
+int main(){//create a function like this(main)
+	string file_addr="example.txt";
+	file f1(file_addr);
+	bool is_open=true;
+	int i=0;
+	while(is_open){
+            cout<<f1.open(i,is_open)<<endl;//instead of cout use socket operation to send the line.
+            i+=1;
+            }
+	getch();
+	return 0;
+}
