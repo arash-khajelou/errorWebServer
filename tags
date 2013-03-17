@@ -4,6 +4,26 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Chapter0	index.html	/^<th colspan=2 align=right><a name="Chapter0"><\/a>Chapter 0<\/th>$/;"	a
+Chapter1	index.html	/^<th colspan=2 align=right><a name="Chapter1"><\/a>Chapter 1<\/th>$/;"	a
+Chapter10	index.html	/^<th colspan=2 align=right><a name="Chapter10"><\/a>Chapter 10<\/th>$/;"	a
+Chapter11	index.html	/^<th colspan=2 align=right><a name="Chapter11"><\/a>Chapter 11<\/th>$/;"	a
+Chapter12	index.html	/^<th colspan=2 align=right><a name="Chapter12"><\/a>Chapter 12<\/th>$/;"	a
+Chapter13	index.html	/^<th colspan=2 align=right><a name="Chapter13"><\/a>Chapter 13<\/th>$/;"	a
+Chapter14	index.html	/^<th colspan=2 align=right><a name="Chapter14"><\/a>Chapter 14<\/th>$/;"	a
+Chapter15	index.html	/^<th colspan=2 align=right><a name="Chapter15"><\/a>Chapter 15<\/th>$/;"	a
+Chapter16	index.html	/^<th colspan=2 align=right><a name="Chapter16"><\/a>Chapter 16<\/th>$/;"	a
+Chapter17	index.html	/^<th colspan=2 align=right><a name="Chapter17"><\/a>Chapter 17<\/th>$/;"	a
+Chapter2	index.html	/^<th colspan=2 align=right><a name="Chapter2"><\/a>Chapter 2<\/th>$/;"	a
+Chapter3	index.html	/^<th colspan=2 align=right><a name="Chapter3"><\/a>Chapter 3<\/th>$/;"	a
+Chapter4	index.html	/^<th colspan=2 align=right><a name="Chapter4"><\/a>Chapter 4<\/th>$/;"	a
+Chapter5	index.html	/^<th colspan=2 align=right><a name="Chapter5"><\/a>Chapter 5<\/th>$/;"	a
+Chapter6	index.html	/^<th colspan=2 align=right><a name="Chapter6"><\/a>Chapter 6<\/th>$/;"	a
+Chapter7	index.html	/^<th colspan=2 align=right><a name="Chapter7"><\/a>Chapter 7<\/th>$/;"	a
+Chapter8	index.html	/^<th colspan=2 align=right><a name="Chapter8"><\/a>Chapter 8<\/th>$/;"	a
+Chapter9	index.html	/^<th colspan=2 align=right><a name="Chapter9"><\/a>Chapter 9<\/th>$/;"	a
+ChapterA	index.html	/^<th colspan=2 align=right><a name="ChapterA"><\/a>Appendix A<\/th>$/;"	a
+ChapterB	index.html	/^<th colspan=2 align=right><a name="ChapterB"><\/a>Appendix B<\/th>$/;"	a
 MAXCONNECTIONS	Socket.h	/^const int MAXCONNECTIONS = 100;$/;"	v
 MAXHOSTNAME	Socket.h	/^const int MAXHOSTNAME = 200;$/;"	v
 MAXRECV	Socket.h	/^const int MAXRECV = 500;$/;"	v
@@ -21,6 +41,7 @@ Socket_class	Socket.h	2;"	d
 StringProc	StringProc.cpp	/^StringProc::StringProc(){$/;"	f	class:StringProc
 StringProc	StringProc.cpp	/^StringProc::StringProc(std::string s){$/;"	f	class:StringProc
 StringProc	StringProc.h	/^class StringProc {$/;"	c
+TOOLS_h	tools.h	2;"	d
 accept	ServerSocket.cpp	/^bool ServerSocket::accept ( ServerSocket& sock )$/;"	f	class:ServerSocket
 accept	Socket.cpp	/^bool Socket::accept ( Socket& new_socket ) const$/;"	f	class:Socket
 bind	Socket.cpp	/^bool Socket::bind ( const int port )$/;"	f	class:Socket
@@ -28,17 +49,24 @@ connect	Socket.cpp	/^bool Socket::connect ( const std::string host, const int po
 create	Socket.cpp	/^bool Socket::create()$/;"	f	class:Socket
 description	SocketException.h	/^  std::string description() { return m_s; }$/;"	f	class:SocketException
 directory	StringProc.h	/^	std::string directory;$/;"	m	class:StringProc
-error_web_server_objects	Makefile	/^error_web_server_objects = ServerSocket.o Socket.o StringProc.o error_web_server_main.o$/;"	m
+error_web_server_objects	Makefile	/^error_web_server_objects = tools.o ServerSocket.o Socket.o StringProc.o error_web_server_main.o$/;"	m
+file	file.cpp	/^		file(string fileaddress)$/;"	f	class:file
+file	file.cpp	/^*\/class file{$/;"	c	file:
+file_addr	file.cpp	/^		string file_addr;$/;"	m	class:file	file:
+file_ext	file.cpp	/^		string file_ext;$/;"	m	class:file	file:
 getDir	StringProc.cpp	/^std::string StringProc::getDir(){$/;"	f	class:StringProc
 getProto	StringProc.cpp	/^std::string StringProc::getProto(){$/;"	f	class:StringProc
 getReq	StringProc.cpp	/^std::string StringProc::getReq(){$/;"	f	class:StringProc
+get_extention	file.cpp	/^		void get_extention()\/\/separate file type$/;"	f	class:file	file:
 iRecv	ServerSocket.cpp	/^bool ServerSocket::iRecv (std::string & s ) {$/;"	f	class:ServerSocket
 is_valid	Socket.h	/^  bool is_valid() const { return m_sock != -1; }$/;"	f	class:Socket
 listen	Socket.cpp	/^bool Socket::listen() const$/;"	f	class:Socket
 m_addr	Socket.h	/^  sockaddr_in m_addr;$/;"	m	class:Socket
 m_s	SocketException.h	/^  std::string m_s;$/;"	m	class:SocketException
 m_sock	Socket.h	/^  int m_sock;$/;"	m	class:Socket
-main	error_web_server_main.cpp	/^int main ()$/;"	f
+main	error_web_server_main.cpp	/^int main () {$/;"	f
+main	file.cpp	/^int main(){\/\/create a function like this(main)$/;"	f
+open	file.cpp	/^		char* open(int line,bool &is_open)$/;"	f	class:file
 operator <<	ServerSocket.cpp	/^const ServerSocket& ServerSocket::operator << ( const std::string& s ) const$/;"	f	class:ServerSocket
 operator >>	ServerSocket.cpp	/^const ServerSocket& ServerSocket::operator >> ( std::string& s ) const$/;"	f	class:ServerSocket
 pString	StringProc.h	/^	std::string pString ;$/;"	m	class:StringProc
@@ -49,6 +77,8 @@ request	StringProc.h	/^	std::string request;$/;"	m	class:StringProc
 send	Socket.cpp	/^bool Socket::send ( const std::string s ) const$/;"	f	class:Socket
 setStringProc	StringProc.cpp	/^void StringProc::setStringProc (std::string s){$/;"	f	class:StringProc
 set_non_blocking	Socket.cpp	/^void Socket::set_non_blocking ( const bool b )$/;"	f	class:Socket
+wpSolutionToggle	index.html	/^            function wpSolutionToggle(solution, link, showtext, hidetext) {$/;"	f
+writeBody	tools.h	/^void writeBody (ServerSocket & connectedSocket, std::string addr) {$/;"	f
 ~ServerSocket	ServerSocket.cpp	/^ServerSocket::~ServerSocket()$/;"	f	class:ServerSocket
 ~Socket	Socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket
 ~SocketException	SocketException.h	/^  ~SocketException (){};$/;"	f	class:SocketException
