@@ -14,7 +14,8 @@ int main () {
 			  << "\n================="
 			  << "\n\t this is a simple web server "
 			  << "\n\t written by :"
-			  << "\n\t\t Arash Khajelou " ;
+			  << "\n\t\t Arash Khajelou " 
+			  << "\n Error Web Server is running ...\n\n";
 	std::ifstream cnf ("config.conf");
 	if (!cnf){
 		std::cout << "conf file not found !";
@@ -25,7 +26,7 @@ int main () {
 	std::cout << wwwDir ;
 	cnf.close () ;
  	try { // starting the body of expection error
-		ServerSocket server ( 2013 ); // creating socket in port 3000
+		ServerSocket server ( 8081 ); // creating socket in port 3000
     while ( true ) { // main loop
 			ServerSocket connectedSock; // accepted socket	created to client
 			bool servTest = server.accept ( connectedSock ); // generatig IP and port ...
@@ -39,7 +40,6 @@ int main () {
 		  		}
 		  		// you should set your wwww (i.e /) directory in the config.conf file
 		  			wwwDir.append(pStr.getDir());
-		  			std::cout << wwwDir ;
 					writeBody (connectedSock, wwwDir);
 				}
 	    }
